@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*medidas absolutas:
+            cm, mm, in, (px), pt, pc
+            medidas relativas:width:
+            (em), ex, rem, vw, vh, %
+            16px geralmente = 1em(tamanho normal da letra)
+            */
+            font-size: 1em;
+            /*lighter normal bold bolder */
+        }
+        h1{
+            /* shorthand font(atalho)- font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'work sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'work sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'work sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo nulla at aspernatur non nisi quasi quaerat, cum, eaque, debitis rem saepe illo! Molestiae maiores perspiciatis accusamus vel tenetur! Quasi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur blanditiis quibusdam accusantium ex expedita consectetur assumenda. Magnam repellendus unde tenetur eos voluptatibus, adipisci perspiciatis labore. Harum temporibus pariatur sed.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolores tenetur, est beatae dolore voluptates autem, provident ipsam excepturi tempora modi omnis quasi ducimus, unde esse cumque tempore assumenda voluptatum?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequatur nesciunt quisquam, reiciendis mollitia laudantium quibusdam, esse ad soluta maiores placeat architecto cumque distinctio veniam tempora sint temporibus voluptatem delectus!</p>
+</body>
+</html>
