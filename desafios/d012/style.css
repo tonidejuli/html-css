@@ -72,27 +72,31 @@ div{
     padding-left: 30px;
     color: white;
     font-size: 3vw;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.471);
 }
 
 div>p{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.501);
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
     
 }
 
 div#imagem1{
     background-image: url('imagens/background001.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: right center;
 }
 
 div#imagem2{
     background-image: url('imagens/background002.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: right center;
 }
 
 section>p{
