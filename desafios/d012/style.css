@@ -10,9 +10,13 @@
     font-style: 'normal';
 }
 
+:root{
+    --fonte1:'Passion One', sans-serif;
+}
+
 
 *{
-    margin: auto;
+    margin: 0px;
 }
 body{
     min-height: 100%;
@@ -26,7 +30,7 @@ header{
 }
 
 header>h1{
-    font-family: 'passion one';
+    font-family: var(--fonte1);
     padding-top: 50px;
     font-variant: small-caps;
     font-size: 10vw;
@@ -38,6 +42,15 @@ header>p{
     font-size: 1.2em;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold; 
+}
+a:hover{
+    text-decoration: underline;
+}
+
 section{
     font-family: 'kalam', sans-serif;
     font-weight: bolder;
@@ -46,7 +59,7 @@ section{
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 30px;
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 div{
@@ -58,7 +71,7 @@ div{
     padding-bottom: 50px;
     padding-left: 30px;
     color: white;
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 div>p{
@@ -97,14 +110,7 @@ footer{
     padding-top: 5px;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold; 
-}
-a:hover{
-    text-decoration: underline;
-}
+
 
 footer>p>a{
     font-style: italic;
