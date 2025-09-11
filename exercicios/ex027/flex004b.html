@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner{
+            background-color: lightcoral;
+            height: 300px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-flow: row nowrap;
+            
+        }
+
+        div#stretch{
+            align-items: stretch;
+        }
+
+        div#start{
+            align-items: start;
+        }
+        div#end{
+            align-items: end;
+        }
+
+        div#center{
+            align-items: center;
+        }
+
+
+        div.item{
+            background-color: lightgoldenrodyellow;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>ALIGN-ITEMS</h1>
+    <h2>stretch</h2>
+    <div class="conteiner" id="stretch">
+        <div class="item">A</div>
+        <div class="item">G</div>
+        <div class="item">C</div>
+        <div class="item">B</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    <h2>flex-start</h2>
+    <div class="conteiner" id="start">
+        <div class="item">A</div>
+        <div class="item">G</div>
+        <div class="item">C</div>
+        <div class="item">B</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    <h2>flex-end</h2>
+    <div class="conteiner" id="end">
+        <div class="item">A</div>
+        <div class="item">G</div>
+        <div class="item">C</div>
+        <div class="item">B</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    <h2>center</h2>
+    <div class="conteiner" id="center">
+        <div class="item">A</div>
+        <div class="item">G</div>
+        <div class="item">C</div>
+        <div class="item">B</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    
+</body>
+</html>

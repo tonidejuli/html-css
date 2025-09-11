@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner{
+            background-color: lightcoral;
+            margin-bottom: 20px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div#start{
+            justify-content: flex-start;
+        }
+
+        div#end{
+            justify-content: flex-end;
+        }
+
+        div#center{
+            justify-content: center;
+        }
+
+        div#between{
+            justify-content: space-between;
+        }
+
+        div#evenly{
+            justify-content: space-evenly;
+        }
+
+        div#around{
+            justify-content: space-around;
+        }
+
+        div.item{
+            background-color: lightgoldenrodyellow;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>JUSTIFY-CONTENT</h1>
+    <h2>flex-start</h2>
+    <div class="conteiner" id="start">
+        <div class="item">A</div>
+        <div class="item">G</div>
+        <div class="item">C</div>
+        <div class="item">B</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    <h2>flex-end</h2>
+    <div class="conteiner" id="end">
+        <div class="item">A</div>
+        <div class="item">G</div>
+        <div class="item">C</div>
+        <div class="item">B</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    <h2>center</h2>
+    <div class="conteiner" id="center">
+        <div class="item">A</div>
+        <div class="item">G</div>
+        <div class="item">C</div>
+        <div class="item">B</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    <h2>space-between</h2>
+    <div class="conteiner" id="between">
+        <div class="item">A</div>
+        <div class="item">G</div>
+        <div class="item">C</div>
+        <div class="item">B</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    <h2>space-evenly</h2>
+    <div class="conteiner" id="evenly">
+        <div class="item">A</div>
+        <div class="item">G</div>
+        <div class="item">C</div>
+        <div class="item">B</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    <h2>space-around</h2>
+    <div class="conteiner" id="around">
+        <div class="item">A</div>
+        <div class="item">G</div>
+        <div class="item">C</div>
+        <div class="item">B</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>  
+</body>
+</html>
