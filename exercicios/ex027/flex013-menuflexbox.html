@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flexbox</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: #E3E3E1;
+        }
+        header{
+            background-color: #828282;
+            padding: 15px;
+            display: flex;
+            flex: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header>h1{
+            font-size: 2.5em;
+            color: white;
+            margin-left: 5px;
+            text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.488);
+        }
+
+        header>div{
+            margin-right: 5px;
+        }
+        header>div>a{
+            margin: 5px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        section{
+            display: flex;
+            flex: row wrap;
+            justify-content: center;
+        }
+
+        article{
+            background-color: white;
+            box-sizing: border-box;
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.455);
+        }
+        article>h2{
+            
+            padding-bottom: 5px;
+        }
+        article>p{
+            text-indent: 10px;
+            line-height: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <div>
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Teste de Flexbox</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repudiandae odit obcaecati aspernatur perferendis nulla qui deserunt sequi voluptatibus reiciendis iste provident quis nam veritatis nisi dolores? Voluptate, exercitationem consequuntur.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae id odio nemo unde dolores provident cumque modi alias inventore quasi, ducimus, ipsum consectetur fuga corrupti maiores hic in. Iusto, deleniti!</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
